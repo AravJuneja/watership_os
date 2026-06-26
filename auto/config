@@ -1,0 +1,10 @@
+#!/bin/sh
+lb config noauto \
+    --distribution noble \
+    --archive-areas "main restricted universe multiverse" \
+    --binary-images iso-hybrid \
+    --debian-installer none \
+    --memtest none \
+    --iso-volume "WatershipOS" \
+    --iso-filename "watership-os-$(date +%Y%m%d).iso" \
+    "${@}"
